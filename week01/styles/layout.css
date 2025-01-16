@@ -8,7 +8,7 @@ body {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #333;
+	background-color: black;
 	align-items: center;
 }
 .navigation li {
@@ -17,9 +17,9 @@ body {
 .navigation a {
 	display: block;
 	color: #eee;
-	padding: 0.75rem;
+	padding: 0.95rem;
 	text-decoration: none;
-	text-align: center;
+	text-align: left;
 }
 
 .navigation a:hover {
@@ -30,14 +30,14 @@ body {
 
   
 header {
-    background: lightpink;
+    background: grey;
     padding: 2rem;
     grid-column: 1 / 4;
   } 
   
   .left-sidebar {
-    background: lightblue;
-    grid-column: 1 / 2;
+    background: lightgrey;
+    grid-column: 2/2;
   }
   
   main {
@@ -46,12 +46,12 @@ header {
   }
   
   .right-sidebar {
-    background: yellow;
-    grid-column: 3 / 4;
+    background: white;
+    grid-column: 3/3;
   }
   
   footer {
-    background: wheat;
+    background: darkgrey;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
