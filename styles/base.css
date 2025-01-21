@@ -8,7 +8,7 @@
 nav ul {
     display: flex;
     justify-content: space-around;
-	background-color: black;
+	  background-color: black;
 } 
 
 
@@ -63,6 +63,10 @@ body {
     margin: 1rem;
 
     
+  }
+
+  .card3 ul {
+    padding-left: 100px;
   }
 
   .card img {
