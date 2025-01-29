@@ -1,0 +1,28 @@
+header  h1{
+    padding: 2rem;
+    border: 15px solid aliceblue;
+    padding-top: 1rem;
+    
+    
+}
+
+.main1 {
+    padding: 2rem;
+    border: 20px solid aliceblue;
+}
+
+.main2 {
+    padding: 2rem;
+    border: 20px solid aliceblue;
+}
+
+footer p {
+    padding: 2rem;
+    border: 15px solid aliceblue;
+    padding-top: 1rem;
+}
+
+body {
+    font-family: "Open Sans", serif;
+    margin: 1rem auto;
+}
