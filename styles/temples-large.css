@@ -1,0 +1,32 @@
+main { 
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+section  {margin: 1rem auto; max-width: 960px; padding: .5rem;}
+.container  {display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 25px;place-items: center;}
+
+img { width: 100%; height: auto; margin: .5rem;}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+}
+
+nav {
+    display: flex;
+} 
+.navigation li {
+    display: flex; 
+    float: right;
+    flex: 1 1 100%;
+}
+.navigation a {
+    text-align: center;
+}
+#menu {
+    display: none;
+}
