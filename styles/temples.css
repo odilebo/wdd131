@@ -32,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #f8f9fa;
+    background-color: #81ADC8;
 }
 
 nav {
@@ -72,7 +72,7 @@ nav {
 }
 
 footer {
-    background: #f8f9fa;
+    background: #81ADC8;
     padding: 2rem;
     text-align: center;
   }
