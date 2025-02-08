@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.hero {
+    height: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+.hero picture, .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading {
+    text-align: center;
+    background-color: #81ADC8;
+    padding: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+}
+
+.blocks {
+    position: absolute; 
+}
+
+.top, .bottom {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 250px;
+    text-align: center;
+    z-index: 10;
+}
+
+.top {
+    top: 20px;
+    left: 400px;
+}
+
+.bottom {
+    bottom: 50px;
+    right: 400px;
+}
+
+footer {
+    background: #81ADC8;
+    padding: 2rem;
+    text-align: center;
+}
+
+.bottom h3:before {
+    content: "";
+    background: url('../images/sun-icon.svg') no-repeat center center/contain;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin-left: 110px;
+
+}
+
+.blocks h2, .blocks h3 {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #81ADC8 ;
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+}

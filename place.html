@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"   content="Oarabile Dilebo" >
+    <meta name="description" content=" WDD 131 - Responsive Place Website" >
+    <title>WDD 131 - Dynamic Web Fundamentals - Place Website </title>
+    <link rel="stylesheet" href="styles/place.css"> 
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 800px)">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">South Africa</div>
+        
+    <div class="hero">
+        <picture>
+            <source srcset="images/place-large.webp" media="(min-width: 800px)">
+            <img src="images/place-small.webp" alt="Orem Utah Temple" width="400" height="200">
+        </picture>
+        <div class="blocks">
+         <div class="top">
+            <h2>Data</h2>
+            <p>
+                <b>Capital Cities:</b> Pretoria, Cape Town, Bloemfontein
+                <b>Official Languages:</b> 12 (including Afrikaans, English, Zulu, Xhosa) <br>
+                <b>Currency:</b> South African Rand (ZAR) <br>
+                <b>Coastline:</b> ~3,000 km (Atlantic & Indian Oceans)
+                <b>National Animal:</b> Springbok
+            </p>
+         </div>
+         <div class="bottom">
+            <h3>Weather</h3>
+            <p>
+                <span id="temp"></span>
+                <b>Conditions:</b> Partly sunny
+                <span id="wind"></span> <br>
+                <b>Humidity:</b> 45% <br>
+                <b>Dew Point:</b> 56°F (13°C)
+                <b>Visibility:</b> 4 miles (6.4 km)
+            </p>
+         </div>
+        </div>
+    </div>
+    <footer>
+        <span id="currentyear"></span>
+        <p>Oarabile Dilebo. Johannesburg South Africa</p>
+        <span id="lastModified"></span>
+    </footer>
+    
+</body>
+</html>
