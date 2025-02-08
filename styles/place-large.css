@@ -77,7 +77,7 @@ footer {
     text-align: center;
 }
 
-.bottom h3:after {
+.bottom h3::after {
     content: "";
     background: url('../images/sun-icon.svg') no-repeat center center/contain;
     display: inline-flex;
