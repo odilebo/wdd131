@@ -5,10 +5,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #81ADC8;
+    --secondary-color: #000;
+    --text-color: white;
+    --padding-large: 3rem;
+    --border-radius: 10px;
+}
+
+
 body {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: var(--secondary-color)
 }
 
 .hero {
@@ -29,7 +38,7 @@ body {
 
 .heading {
     text-align: center;
-    background-color: #81ADC8;
+    background-color: var(--primary-color);
     padding: 3rem;
     font-size: 3rem;
     font-weight: bold;
@@ -63,25 +72,25 @@ body {
 }
 
 footer {
-    background: #81ADC8;
+    background-color: var(--primary-color);
     padding: 2rem;
     text-align: center;
 }
 
-.bottom h3:before {
+.bottom h3:after {
     content: "";
     background: url('../images/sun-icon.svg') no-repeat center center/contain;
-    display: inline-block;
-    width: 100px;
+    display: inline-flex;
+    width: 50px;
     height: 50px;
-    margin-left: 110px;
+    
 
 }
 
 .blocks h2, .blocks h3 {
     margin-bottom: 1rem;
     padding: 0.5rem;
-    background-color: #81ADC8 ;
+    background-color: var(--primary-color);
     color: black;
     text-align: center;
     width: 100%;
