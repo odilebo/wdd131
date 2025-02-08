@@ -8,8 +8,8 @@
     }
 
     :root {
-        --primary-color: #81ADC8;
-        --secondary-color: #000;
+        --primary-color: #ffb612;
+        --secondary-color: black;
         --text-color: white;
         --padding-large: 3rem;
         --border-radius: 10px;
@@ -64,12 +64,12 @@
     }
 
     .top {
-        top: 20px;
+        top: 50px;
         left: 400px;
     }
 
     .bottom {
-        bottom: 50px;
+        bottom: 20px;
         right: 400px;
     }
 
@@ -79,7 +79,7 @@
         text-align: center;
     }
 
-    .bottom h3::after {
+    .top h3::after {
         content: "";
         background: url('../images/sun-icon.svg') no-repeat center center/contain;
         display: inline-flex;

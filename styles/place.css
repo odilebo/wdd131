@@ -14,7 +14,7 @@ body {
 
 .heading {
     text-align: center;
-    background-color: #81ADC8;
+    background-color: #ffb612;
     padding: 3rem;
     font-size: 3rem;
     font-weight: bold;
@@ -55,9 +55,8 @@ body {
     text-align: center;
 }
 
-/* Footer Styles */
 footer {
-    background: #81ADC8;
+    background: #ffb612;
     padding: 2rem;
     text-align: center;
     margin-top: auto; 

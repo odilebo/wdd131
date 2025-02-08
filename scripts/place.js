@@ -21,7 +21,7 @@ day.innerHTML = `Last Modified:  <span class="highlight">${new Intl.DateTimeForm
 
 full.innerHTML = ` <span class="highlight">${today.getFullYear()}</span>`;
 
-const temp = 15
+const temp = 9
 const wind = 10
 
 function windFactor( temp, wind) {
