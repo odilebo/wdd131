@@ -114,10 +114,49 @@ const temples = [
     
   ];
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-    temples.forEach(temple => {
+const nonUtahLink = document.querySelector("#nonUtahLink");
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+const homeLink = document.querySelector("#home");
+
+
+//nonUtahLink.addEventListener("click", () => {
+    //createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
+//});
+
+oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]); 
+        return year < 1900;
+    }));
+});
+
+newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]); 
+        return year > 2000;
+    }));
+});
+
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+homeLink.addEventListener("click", () => {
+    createTempleCard(temples);
+});
+
+function createTempleCard(filteredTemples) {
+    document.querySelector(".res-grid").innerHTML = "";
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
