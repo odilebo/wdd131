@@ -93,7 +93,7 @@ const temples = [
         dedicated: "1985, August, 25",
         area: 19184,
         imageUrl:
-        "https://churchofjesuschristtemples.org/johannesburg-south-africa-temple/photographs/#Gallery-2"
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/800x500/johannesburg-south-africa-temple-1021295-wallpaper.jpg"
       },
       {
         templeName: "Durban South Africa",
@@ -101,7 +101,7 @@ const temples = [
         dedicated: "2020, February, 16",
         area: 19860,
         imageUrl:
-        "https://churchofjesuschristtemples.org/durban-south-africa-temple/photographs/#Official-1"
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/durban-south-africa/800x500/1-8b3f1b895a7c92ee66c2d0c7e78606f75f0d0cc8.jpg"
       },
       {
         templeName: "Rome Italy",
@@ -109,7 +109,7 @@ const temples = [
         dedicated: "2019, March, 12",
         area: 41010,
         imageUrl:
-        "https://churchofjesuschristtemples.org/rome-italy-temple/photographs/#Official-34"
+        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/800x500/1-Rome-Temple-2160936.jpg"
       },
     
   ];
@@ -157,26 +157,28 @@ homeLink.addEventListener("click", () => {
 function createTempleCard(filteredTemples) {
     document.querySelector(".res-grid").innerHTML = "";
     filteredTemples.forEach(temple => {
+        let img = document.createElement("img");
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let dedication = document.createElement("p");
         let area = document.createElement("p");
-        let img = document.createElement("img");
 
+        img.setAttribute("loading", "lazy");
         name.textContent = temple.templeName;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
         dedication.innerHTML = `<span class="label">Dedication:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
-        img.setAttribute("loading", "lazy");
+        
 
+        card.appendChild(img);
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedication);
         card.appendChild(area);
-        card.appendChild(img);
+        
 
         document.querySelector(".res-grid").appendChild(card);
     })
