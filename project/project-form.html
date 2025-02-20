@@ -6,6 +6,9 @@
     <title>Submit a Review</title>
     <link rel="stylesheet" href="styles/project-large.css">
     <script defer src="scripts/project.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,53 +16,42 @@
         <nav>
             <ul>
                 <li><a href="project-home.html">Home</a></li>
-                <li><a href="project-ideapage.html">Ideas</a></li>
-                <li><a href="project-form.html">Submit Review</a></li>
-                <li><a href="project-ideas.html">References</a></li>
+                <li><a href="project-ideapage.html">Newer Ideas</a></li>
+                <li><a href="project-form.html">Newsletter</a></li>
+                <li><a href="project-ideas.html">Older Ideas</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Share Your Thoughts on These Ideas</h2>
-        <form action="review.html" method="get">
-            <label for="product">Product Name:</label>
-            <select id="product" name="product" required>
-                <option value="" disabled selected>Select a Product ...</option>
-            </select>
 
-            <fieldset>
-                <legend>Overall Rating:</legend>
-                <label><input type="radio" name="rating" value="1" required> ☆</label>
-                <label><input type="radio" name="rating" value="2"> ☆☆</label>
-                <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-                <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-                <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
-            </fieldset>
-
-            <label for="date">Date of Installation:</label>
-            <input type="date" id="date" name="date" required>
-
-            <fieldset>
-                <legend>Useful Features (Check all that apply):</legend>
-                <label><input type="checkbox" name="features" value="innovation"> Innovation</label>
-                <label><input type="checkbox" name="features" value="efficiency"> Efficiency</label>
-                <label><input type="checkbox" name="features" value="convenience"> Convenience</label>
-            </fieldset>
-
-            <label for="review">Written Review:</label>
-            <textarea id="review" name="review" rows="4"></textarea>
-
-            <label for="username">Your Name (Optional):</label>
-            <input type="text" id="username" name="username">
-
-            <input type="submit" value="Submit Review">
+        <form action="subscribe.html" method="get">
+            <h2>Subscribe to Our Newsletter</h2>
+        
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+            <label>What topics interest you?</label><br>
+            <input type="checkbox" id="inventions" name="topics" value="inventions">
+            <label for="inventions">Innovations & Inventions</label><br>
+        
+            <input type="checkbox" id="history" name="topics" value="history">
+            <label for="history">Historical Ideas</label><br>
+        
+            <input type="checkbox" id="psychology" name="topics" value="psychology">
+            <label for="psychology">Psychology & Thought</label><br>
+        
+            <input type="submit" value="Subscribe">
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2025 Everyday Ideas. All Rights Reserved.</p>
-        <a href="references.html">References</a>
+        <span id="currentyear"></span>
+        <p>Oarabile Dilebo. Johannesburg South Africa</p>
+        <span id="lastModified"></span>
     </footer>
 </body>
 </html>
