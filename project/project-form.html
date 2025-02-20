@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Review</title>
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script defer src="scripts/project.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Submit a Review</h1>
+        <nav>
+            <ul>
+                <li><a href="project-home.html">Home</a></li>
+                <li><a href="project-ideapage.html">Ideas</a></li>
+                <li><a href="project-form.html">Submit Review</a></li>
+                <li><a href="project-ideas.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Share Your Thoughts on These Ideas</h2>
+        <form action="review.html" method="get">
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" value="1" required> ☆</label>
+                <label><input type="radio" name="rating" value="2"> ☆☆</label>
+                <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
+                <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
+                <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+            </fieldset>
+
+            <label for="date">Date of Installation:</label>
+            <input type="date" id="date" name="date" required>
+
+            <fieldset>
+                <legend>Useful Features (Check all that apply):</legend>
+                <label><input type="checkbox" name="features" value="innovation"> Innovation</label>
+                <label><input type="checkbox" name="features" value="efficiency"> Efficiency</label>
+                <label><input type="checkbox" name="features" value="convenience"> Convenience</label>
+            </fieldset>
+
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            <label for="username">Your Name (Optional):</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Everyday Ideas. All Rights Reserved.</p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>
