@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "idea4", name: "Printing Press" }
     ];
 
-    if (productSelect) {
+    if (productSelect) { 
         products.forEach(product => {
             const option = document.createElement("option");
             option.value = product.id;

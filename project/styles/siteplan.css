@@ -1,14 +1,14 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ECF0F1;
-    color: #2C3E50;
+    background-color: white ;
+    color: #1E2019;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #2C3E50;
+    background-color: #1E2019;
     color: white;
     text-align: center;
     padding: 20px;
@@ -22,18 +22,18 @@ h1, h2 {
 section {
     padding: 20px;
     margin: 20px;
-    background: white;
+    background: #8DAB7F;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 h2 {
-    color: #E67E22;
+    color: #1E2019;
 }
 
 nav {
-    background-color: #E67E22;
+    background-color: #1E2019;
     padding: 10px;
     text-align: center;
 }
