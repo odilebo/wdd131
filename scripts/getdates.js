@@ -1,7 +1,7 @@
 const full = document.querySelector("#currentyear");
 const day = document.querySelector("#lastModified");
 
-// use the date object
+
 const today = new Date();
 let lastMod = new Date(document.lastModified);
 

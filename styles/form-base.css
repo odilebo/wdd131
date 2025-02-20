@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ECF0F1;
+    background-color: #EEF5DB;
     color: #2C3E50;
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@ body {
 }
 
 header {
-    background-color: #2C3E50;
-    color: white;
+    background-color: #C7EFCF;
+    color: black;
     padding: 20px;
     font-size: 24px;
 }
@@ -45,7 +45,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="submit"] {
-    background-color: #E67E22;
+    background-color: #FE5F55;
     color: white;
     border: none;
     padding: 10px;
@@ -56,12 +56,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #D35400;
+    background-color: #FE5F55;
 }
 
 footer {
-    background-color: #2C3E50;
-    color: white;
+    background-color: #C7EFCF;
+    color: black;
     padding: 15px;
     margin-top: 20px;
 }
